@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../img/Paris.png") no-repeat center center/cover;
+  background-color: #806DA6;
+  font-family: 'Edu TAS Beginner', cursive;
+  color: white;
+  overflow: hidden;
+}
+
+#menu {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 99; 
+  
+}
+
+.livesDisplay{
+
+  background-image: url("../img/3coras.png") ;
+
+}
+
+
+
+.boton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #894caf;
+  border: 2px solid #000000;
+  border-radius: 1px;
+  box-shadow: 0 9px #000000;
+}
+
+.boton:hover {background-color: #513e8e}
+
+.boton:active {
+  background-color: #513e8e;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#game-board {
+  width: 1200px;
+  height: 98vh;
+  margin: auto;
+  position: relative;
+}
+
+#score-text {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 2rem;
+}
+
+.Ingrediente {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: url("../img/ajo.png") no-repeat center center/cover;
+}
+
+.Ingrediente-20 {
+  background-image: url("../img/berenjena.png") ;
+}
+
+.Ingrediente-30 {
+  background-image: url("../img/cebolla.png") ;
+}
+
+.Ingrediente-40 {
+  background-image: url("../img/morron.png") ;
+}
+
+.Ingrediente-50 {
+  background-image: url("../img/salsa.png");
+}
+
+.Ingrediente-60 {
+  background-image: url("../img/tomate.png") ;
+}
+
+.Ingrediente-70 {
+  background-image: url("../img/zuquini.png") ;
+}
+
+.Veneno {
+  background-image: url("../img/veneno.png") ;
+}
+
+.Trampa {
+  background-image: url("../img/Trampa.png") ;
+}
+
+
+
+
+/* Pj */
+
+#main-character {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+
+#main-character #player {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  background: url("../img/REMIBB.png") no-repeat center center/cover;
+}
+
+
+#game-over-alert {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+  position: absolute;
+  width: max-content;
+}
+
+#game-over-alert a {
+  color: #ffffff;
+  font-size: 2rem;
+}
+#game-over-alert h1 {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
